@@ -46,9 +46,7 @@ function App() {
     setResults([]);
   };
 
-  const handleClear = () => {
-    textInputRef.current.value = "";
-  };
+
 
   const triggerUpload = () => {
     fileInputRef.current.click();
@@ -96,12 +94,7 @@ function App() {
           ref={textInputRef}
           onChange={handleOnChange}
         />
-        <input
-          className="buttonClear"
-          type="reset"
-          value="Reset"
-          onClick={handleClear}
-        />
+
       </div>
       <div className="mainWrapper">
         <div className="mainContent">
